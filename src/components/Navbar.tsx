@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import WaveLogo from "./WaveLogo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -18,8 +19,9 @@ export default function Navbar() {
     <nav className="bg-navy text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-ocean-light">Wave</span>side
+          <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+            <WaveLogo className="w-8 h-8" />
+            <span><span className="text-ocean-light">Wave</span>side</span>
           </Link>
 
           {/* Desktop nav */}
