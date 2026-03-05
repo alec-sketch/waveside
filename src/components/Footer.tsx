@@ -32,7 +32,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-ocean/30 mt-8 pt-8 text-center text-xs">
-          &copy; {new Date().getFullYear()} Waveside. All rights reserved.
+          <p>&copy; {new Date().getFullYear()} Waveside. All rights reserved.</p>
+          <p className="mt-2 text-ocean/40 hover:text-sand transition-colors duration-700 cursor-default select-none" title="you found it">
+            no waves were harmed in the making of this site &mdash; alec just mass-produced them
+          </p>
         </div>
       </div>
     </footer>

@@ -89,3 +89,11 @@ model Estimate {
   @@index([technologyId])
   @@index([stateId])
 }
+
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String?
+  createdAt DateTime @default(now())
+}

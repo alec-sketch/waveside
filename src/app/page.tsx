@@ -80,6 +80,25 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Sign-Up CTA */}
+      <section className="py-16 px-4 bg-gradient-to-r from-ocean to-ocean-light">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to Make Waves?
+          </h2>
+          <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+            Sign up to receive personalized guidance on bringing a wave pool to
+            your community. No commitment&mdash;just the first step.
+          </p>
+          <Link
+            href="/signup"
+            className="inline-block bg-sand hover:bg-sand-light text-navy font-bold px-8 py-3 rounded-lg transition-colors text-lg"
+          >
+            Sign Up Now
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

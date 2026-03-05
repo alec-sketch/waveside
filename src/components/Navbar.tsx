@@ -41,6 +41,12 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/signup"
+              className="ml-2 bg-sand hover:bg-sand-light text-navy font-bold px-4 py-2 rounded-lg text-sm transition-colors"
+            >
+              Sign Up
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -78,6 +84,13 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/signup"
+              onClick={() => setOpen(false)}
+              className="block bg-sand hover:bg-sand-light text-navy font-bold px-3 py-2 rounded-lg text-sm transition-colors text-center mt-2"
+            >
+              Sign Up
+            </Link>
           </div>
         </div>
       )}
